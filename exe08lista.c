@@ -2,6 +2,8 @@
 por:
 a0 = 1, a1 = 2, e an = an−1 × an−2, para n = 2, 3, 4, . . . */
 
+/*TESTANDO SÓ ESSA MERDA*/
+
 #include <stdio.h>
 
 nesimo(int n)
