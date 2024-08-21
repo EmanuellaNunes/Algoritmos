@@ -33,6 +33,7 @@ struct regaluno {
 };
 typedef struct regaluno aluno;
 
+/*RECURSIVA*/
 void busca_aluno(aluno aluno[], int rga, int n)
 {
     if(n > 0)
