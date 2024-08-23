@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_ALUNOS 50
-
 /*Estrutura para armazenar informações de um aluno*/
 struct regaluno {
     char nome[25];
@@ -96,7 +94,7 @@ void lista_alunos(aluno alunos[], int n) {
 
 /*Função para listar alunos aprovados, ordenados por nome*/
 void lista_alunos_aprovados(aluno alunos[], int n) {
-    aluno aprovados[MAX_ALUNOS];
+    aluno *aprovados[];
     int count = 0, i, j;
 
     /*Seleciona alunos aprovados*/
@@ -198,10 +196,10 @@ void calcula_medias(aluno alunos[], int n) {
 }
 
 int main(void) {
-    aluno alunos[MAX_ALUNOS];
+    aluno *alunos;
     int n = 0;
     int op, rga, pos, resultado, continuar = 1;
-
+    alunos = (int *) malloc(n * sizeof(int));
     while (continuar) {
         printf("Selecione uma opção: \n");
         printf("1 - Cadastrar aluno\n");
